@@ -1,0 +1,158 @@
+/* Empty. Add your own CSS if you like */
+
+ion-item.itemHeader{
+	background: red;
+	padding:10px;
+}
+
+ion-item.itemContent{
+	padding:10px;
+}
+
+/**
+ * 对select样式重写
+ */
+.item-select select{
+	direction: ltr;
+	max-width: 100%;
+	width: 100%;
+}
+/**
+ * 改变select后面的尖角号的颜色
+ */
+/*.item-select:after{
+	color: #111;
+}*/
+
+.selectContainer{
+	display: flex;
+}
+
+.selectContainer .selectField{
+	flex: 1;
+}
+
+.selectContainer .inputField{
+	flex: 1;
+}
+
+.bar.bar-stable {
+    background-color: #ffffff;
+}
+
+.hbox,.vbox{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.hbox{
+	-webkit-box-orient: horizontal !important;
+	-ms-flex-direction: row !important;
+	flex-direction: row !important;
+}
+
+.vbox{
+	-webkit-box-orient: vertical !important;
+	-ms-flex-direction: column !important;
+	flex-direction: column !important;
+}
+.searchContent{
+	background-color: #f5f4f4;
+}
+.searchCard{
+	padding:10px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+    margin: 10px 10px 0px 10px;
+    border-radius: 2px;
+    background-color: #fff;
+    display: inline-block;
+    width: 47.5%;
+}
+.firstRow{
+	padding:5px 0px 10px 0px;
+	border-bottom: 1px solid #e8e8e8;
+}
+.firstRow .companyIcon{
+	width: 24px;
+	height: 24px;
+	background-size: 24px;
+	background: url(../img/dia_jianzu.png);
+}
+.firstRow .companyName{
+	flex: 1;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.firstRow .companyName div{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.firstRow .downloadIcon{
+	width:24px;
+	height:24px;
+	background-size: 24px;
+	background: url(../img/dia_download.png);
+}
+.sencondRow{
+	padding: 10px 0px;
+}
+.sencondRow .addressIcon{
+	width: 24px;
+	height: 24px;
+	background-size: 24px;
+	background: url(../img/dia_dingwei.png);
+}
+.sencondRow .address{
+	line-height: 24px;
+	flex: 1;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.thirdRow{
+	padding: 0px 0px 10px 0px;
+}
+.thirdRow .inforIcon{
+	width: 24px;
+	height: 24px;
+	background-size: 24px;
+	background: url(../img/dia_address.png);
+}
+.thirdRow .field{
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	line-height: 24px;
+}
+.thirdRow .field.wbs{
+	-webkit-box-flex: 2;
+	-ms-flex: 2;
+	flex: 2;
+}
+.dataVersion{
+	text-align: right;
+	display: -webkit-box;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
