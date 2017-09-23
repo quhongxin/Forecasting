@@ -16,6 +16,8 @@ ion-item.itemContent{
 	direction: ltr;
 	max-width: 100%;
 	width: 100%;
+	background: #2B7DB5;
+	-webkit-text-fill-color: #ffffff;
 }
 /**
  * 改变select后面的尖角号的颜色
@@ -31,11 +33,16 @@ ion-item.itemContent{
 .selectContainer .selectField{
 	flex: 1;
 }
-
+.selectContainer .selectField option{
+	background: #ffffff;
+}
 .selectContainer .inputField{
 	flex: 1;
+	background: #2B7DB5;
 }
-
+.item-input.inputField input{
+	color: #ffffff;
+}
 .bar.bar-stable {
     background-color: #ffffff;
 }
@@ -155,4 +162,28 @@ ion-item.itemContent{
 	text-overflow: ellipsis;
 	-webkit-line-clamp: 1;
 	-webkit-box-orient: vertical;
+}
+.bar.bar-assertive.versionConflict{
+	border-color: #ffffff;
+	background-color: #F7E0C8;
+	margin-top:10px;
+}
+.bar.bar-assertive.versionConflict .title{
+	color: #FD991B;
+	text-align: left;
+	font-weight: 400;
+	font-size: 16px;
+}
+.mainContent{
+	background: #F5F3F4;
+}
+
+.bar-stable.bar.bar-header{
+	background: #2B7DB5;
+}
+.bar.bar-stable .title {
+    color: #ffffff;
+}
+.bar-stable .button.button-clear{
+	color: #ffffff;
 }
