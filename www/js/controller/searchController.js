@@ -1,5 +1,5 @@
 angular.module('starter.searchController',[])
-.controller('searchController',function($scope,searchService){
+.controller('searchController',function($scope,searchService,$filter){
 	/**
 	 * 显示search
 	 */
@@ -32,9 +32,15 @@ angular.module('starter.searchController',[])
 	}
 	
 	/**
-	 * 跳转到forecasting
+	 * 搜索本地项目
 	 */
-	$scope.goForecasting = function(){
-		
+	$scope.searchProject = function(e){
+		var keycode = window.event?e.keyCode:e.which;
+		if(keycode==13){
+                console.log($scope.searchValue)
+            }
 	}
+	
+
+	
 })

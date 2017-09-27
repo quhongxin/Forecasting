@@ -9,7 +9,7 @@
     </select>
 			</div>
 			<div class="item item-input inputField">
-				    <input type="text" placeholder="First Name">
+				    <input type="text" placeholder="First Name" ng-model="$parent.searchValue" ng-keyup="searchProject($event)" >
 			</div>
 		</div>
 	</ion-nav-title>
