@@ -188,8 +188,24 @@ ion-item.itemContent{
 	color: #ffffff;
 }
 .row.formHeader{
-	margin-top: 50px;
+	margin-top: 55px;
 	background-color: #fff;
 	height: 50px;
 	line-height: 40px;
 }
+.col-15 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 15%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 15%;
+  -ms-flex: 0 0 15%;
+  flex: 0 0 15%;
+  max-width: 15%; }
+.col-30 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 30%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 30%;
+  -ms-flex: 0 0 30%;
+  flex: 0 0 30%;
+  max-width: 30%; }
