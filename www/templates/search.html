@@ -2,7 +2,7 @@
 	<ion-nav-title>
 		<div class="selectContainer">
 		<div class="item item-input item-select selectField">
-		<select ng-model="selectType" ng-options="obj.Name for obj in searchTypeList" ng-init="selectType = searchTypeList[0]">
+		<select ng-model="$parent.selectType" ng-options="obj.Name for obj in searchTypeList" ng-init="$parent.selectType = searchTypeList[0]">
 	      
     	</select>
 		</div>

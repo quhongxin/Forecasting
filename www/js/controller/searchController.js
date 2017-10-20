@@ -47,6 +47,7 @@ angular.module('starter.searchController',[])
 		var keycode = window.event?e.keyCode:e.which;
 		if(keycode==13){
                 console.log($scope.searchValue);
+                console.log($scope.selectType.Type);
             }
 	}
 	
