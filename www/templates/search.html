@@ -2,12 +2,10 @@
 	<ion-nav-title>
 		<div class="selectContainer">
 		<div class="item item-input item-select selectField">
-		<select>
-	      <option>Alderaan</option>
-	      <option selected="">Dagobah</option>
-	      <option>Felucia</option>
+		<select ng-model="selectType" ng-options="obj.Name for obj in searchTypeList" ng-init="selectType = searchTypeList[0]">
+	      
     	</select>
-			</div>
+		</div>
 			<div class="item item-input inputField">
 				    <input type="text" placeholder="First Name" ng-model="$parent.searchValue" ng-keyup="searchProject($event)" >
 			</div>

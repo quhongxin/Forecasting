@@ -89,3 +89,21 @@ function getSearchList() {
 	}
 	return obj;
 }
+
+function getSearchTypeList(){
+	var arr = [
+	{
+		Name: 'Project Name',
+		Type: 'ProjectName'
+	},
+	{
+		Name: 'Field WBS No.',
+		Type: 'FieldWBSNo'
+	},
+	{
+		Name: 'View ID',
+		Type: 'ViewID'
+	}
+	];
+	return arr;
+}

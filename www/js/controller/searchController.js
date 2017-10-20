@@ -1,5 +1,14 @@
 angular.module('starter.searchController',[])
 .controller('searchController',function($scope,searchService,$filter){
+	
+	$scope.$on('$ionicView.beforeEnter', function() {
+		
+		});
+		
+	/**
+	 * 获取搜索条件
+	 */
+    $scope.searchTypeList = getSearchTypeList();
 	/**
 	 * 显示search
 	 */
@@ -37,7 +46,7 @@ angular.module('starter.searchController',[])
 	$scope.searchProject = function(e){
 		var keycode = window.event?e.keyCode:e.which;
 		if(keycode==13){
-                console.log($scope.searchValue)
+                console.log($scope.searchValue);
             }
 	}
 	
