@@ -1,63 +1,65 @@
 <ion-view>
 	<ion-nav-title>
 		<div class="selectContainer">
-		<div class="item item-input item-select selectField">
-		<select ng-model="$parent.selectType" ng-options="obj.Name for obj in searchTypeList" ng-init="$parent.selectType = searchTypeList[0]">
-	      
-    	</select>
-		</div>
+			<div class="item item-input item-select selectField">
+				<select ng-model="$parent.selectType" ng-options="obj.Name for obj in searchTypeList" ng-init="$parent.selectType = searchTypeList[0]">
+
+				</select>
+			</div>
 			<div class="item item-input inputField">
-				    <input type="text" placeholder="First Name" ng-model="$parent.searchValue" ng-keyup="searchProject($event)" >
+				<input type="text" placeholder="First Name" ng-model="$parent.searchValue" ng-keyup="searchProject($event)">
 			</div>
 		</div>
 	</ion-nav-title>
-	
-  <ion-content class="searchContent">
-    <div class="searchCard" ng-repeat="item in searchList" ui-sref="app.forecasting({projectID:item.ProjectID})">
-    	<div class="hbox firstRow">
-    		<div class="companyIcon"></div>
-    		<div class="companyName"><div>{{item.ProjectName}}</div></div>
-    		<div class="downloadIcon"></div>
-    	</div>
-    	<div class="hbox sencondRow">
-    		<div  class="addressIcon"></div>
-    		<div class="address">{{item.ProjectAddress}}</div>
-    	</div>
-    	<div class="hbox thirdRow">
-    		<div class="inforIcon"></div>
-    		<div class="field wbs">Field WBS No: {{item.FieldWBSNo}}</div>
-    		<div class="field">Units: {{item.UnitCount}}</div>
-    	</div>
-    	<div class="hbox fourRow">
-    		<div class="dataVersion">SAP Data Version: {{item.SAPDataVersion}}</div>
-    	</div>
-    </div>
-    <div class="searchCard">
-    	<div class="hbox firstRow">
-    		<div class="companyIcon"></div>
-    		<div class="companyName"><div>上海港国际客运中心</div></div>
-    		<div class="downloadIcon"></div>
-    	</div>
-    	<div class="hbox sencondRow">
-    		<div  class="addressIcon"></div>
-    		<div class="address">上海虹口太平路1号</div>
-    	</div>
-    	<div class="hbox thirdRow">
-    		<div class="inforIcon"></div>
-    		<div class="field wbs">Field WBS No: FSSO-03399</div>
-    		<div class="field">Units: 24</div>
-    	</div>
-    	<div class="hbox fourRow">
-    		<div class="dataVersion">SAP Data Version: 06/10/2017</div>
-    	</div>
-    </div>
-    <ion-refresher
-    pulling-text="Pull to refresh..."
-    on-refresh="doRefresh()">
-  </ion-refresher>
-  <ion-infinite-scroll
-    on-infinite="loadMore()"
-    distance="1%">
-  </ion-infinite-scroll>
-  </ion-content>
+
+	<ion-content class="searchContent">
+		<div class="searchCard" ng-repeat="item in searchList" ui-sref="app.forecasting({projectID:item.ProjectID})">
+			<div class="hbox firstRow">
+				<div class="companyIcon"></div>
+				<div class="companyName">
+					<div>{{item.ProjectName}}</div>
+				</div>
+				<div class="downloadIcon"></div>
+			</div>
+			<div class="hbox sencondRow">
+				<div class="addressIcon"></div>
+				<div class="address">{{item.ProjectAddress}}</div>
+			</div>
+			<div class="hbox thirdRow">
+				<div class="inforIcon"></div>
+				<div class="field wbs">Field WBS No: {{item.FieldWBSNo}}</div>
+				<div class="field">Units: {{item.UnitCount}}</div>
+			</div>
+			<div class="hbox fourRow">
+				<div class="dataVersion">SAP Data Version: {{item.SAPDataVersion}}</div>
+			</div>
+		</div>
+		<div class="searchCard">
+			<div class="hbox firstRow">
+				<div class="companyIcon"></div>
+				<div class="companyName">
+					<div>上海港国际客运中心</div>
+				</div>
+				<div class="downloadIcon"></div>
+			</div>
+			<div class="hbox sencondRow">
+				<div class="addressIcon"></div>
+				<div class="address">上海虹口太平路1号</div>
+			</div>
+			<div class="hbox thirdRow">
+				<div class="inforIcon"></div>
+				<div class="field wbs">Field WBS No: FSSO-03399</div>
+				<div class="field">Units: 24</div>
+			</div>
+			<div class="hbox fourRow">
+				<div class="dataVersion">SAP Data Version: 06/10/2017</div>
+			</div>
+		</div>
+		<ion-refresher pulling-text="Pull to refresh..." on-refresh="doRefresh()">
+			
+		</ion-refresher>
+		<ion-infinite-scroll on-infinite="loadMore()" distance="1%">
+			
+		</ion-infinite-scroll>
+	</ion-content>
 </ion-view>
