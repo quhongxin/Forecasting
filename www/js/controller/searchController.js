@@ -3,10 +3,6 @@ angular.module('starter.searchController', [])
 
 		$scope.$on('$ionicView.beforeEnter', function() {
 			/**
-			 * 获取搜索条件
-			 */
-			$scope.searchTypeList = getSearchTypeList();
-			/**
 			 * 显示search
 			 */
 			searchService.getSearchList().then(function(data) {
@@ -15,7 +11,10 @@ angular.module('starter.searchController', [])
 
 			});
 		});
-
+		/**
+		 * 获取搜索条件
+		 */
+		$scope.searchTypeList = getSearchTypeList();
 		/**
 		 * 上拉刷新
 		 */
