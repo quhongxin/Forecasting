@@ -46,7 +46,7 @@ angular.module('starter.searchController', [])
 		$scope.searchProject = function(e) {
 			var keycode = window.event ? e.keyCode : e.which;
 			if(keycode == 13) {
-				if($scope.searchValue){
+				if($scope.searchValue) {
 					var expression = {};
 					if($scope.selectType.Type === "ProjectName") {
 						expression.ProjectName = $scope.searchValue;
@@ -56,18 +56,18 @@ angular.module('starter.searchController', [])
 						expression.ProjectID = $scope.searchValue;
 					}
 					searchService.getSearchList().then(function(data) {
-					$scope.searchList = $filter('filter')(data.result,expression);
+						$scope.searchList = $filter('filter')(data.result, expression);
 					}, function(error) {
-			
+
 					});
-				}else{
+				} else {
 					searchService.getSearchList().then(function(data) {
 						$scope.searchList = data.result;
 					}, function(error) {
-			
+
 					});
 				}
-				
+
 			}
 		}
 
