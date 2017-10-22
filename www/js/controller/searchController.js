@@ -2,20 +2,18 @@ angular.module('starter.searchController', [])
 	.controller('searchController', function($scope, searchService, $filter) {
 
 		$scope.$on('$ionicView.beforeEnter', function() {
+			/**
+			 * 获取搜索条件
+			 */
+			$scope.searchTypeList = getSearchTypeList();
+			/**
+			 * 显示search
+			 */
+			searchService.getSearchList().then(function(data) {
+				$scope.searchList = data.result;
+			}, function(error) {
 
-		});
-
-		/**
-		 * 获取搜索条件
-		 */
-		$scope.searchTypeList = getSearchTypeList();
-		/**
-		 * 显示search
-		 */
-		searchService.getSearchList().then(function(data) {
-			$scope.searchList = data.result;
-		}, function(error) {
-
+			});
 		});
 
 		/**
