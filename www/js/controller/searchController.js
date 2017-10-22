@@ -46,15 +46,28 @@ angular.module('starter.searchController', [])
 		$scope.searchProject = function(e) {
 			var keycode = window.event ? e.keyCode : e.which;
 			if(keycode == 13) {
-				var expression = {};
-				if($scope.selectType.Type === "ProjectName") {
-					expression.ProjectName = $scope.searchValue;
-				} else if($scope.selectType.Type === "FieldWBSNo") {
-					expression.FieldWBSNo = $scope.searchValue;
-				} else {
-					expression.ViewID = $scope.searchValue;
+				if($scope.searchValue){
+					var expression = {};
+					if($scope.selectType.Type === "ProjectName") {
+						expression.ProjectName = $scope.searchValue;
+					} else if($scope.selectType.Type === "FieldWBSNo") {
+						expression.FieldWBSNo = $scope.searchValue;
+					} else {
+						expression.ProjectID = $scope.searchValue;
+					}
+					searchService.getSearchList().then(function(data) {
+					$scope.searchList = $filter('filter')(data.result,expression);
+					}, function(error) {
+			
+					});
+				}else{
+					searchService.getSearchList().then(function(data) {
+						$scope.searchList = data.result;
+					}, function(error) {
+			
+					});
 				}
-				$scope.searchList = $filter('filter')($scope.searchList, expression);
+				
 			}
 		}
 
