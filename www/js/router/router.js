@@ -21,7 +21,8 @@ angular.module('starter.router', []).config(function($stateProvider, $urlRouterP
 			url: '/project',
 			views: {
 				'menuContent': {
-					templateUrl: 'templates/project.html'
+					templateUrl: 'templates/project.html',
+					controller:'projectCtrl'
 				}
 			}
 		})
