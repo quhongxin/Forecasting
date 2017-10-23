@@ -1,7 +1,7 @@
 var Global = {
 	Token: '',
-	Domain: '',
-	UserID: 1,
-	User8ID: 80000197,
+	Domain: 'https://cndev.dhc.com.cn',
+	UserID: 501401,
+	User8ID: 80000060,
 	LanguageCode: 'en',
 }
