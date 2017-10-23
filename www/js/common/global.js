@@ -1,0 +1,3 @@
+var Global = {
+	Token:''
+}
