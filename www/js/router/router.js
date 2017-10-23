@@ -12,7 +12,7 @@ angular.module('starter.router', []).config(function($stateProvider, $urlRouterP
 			views: {
 				'menuContent': {
 					templateUrl: 'templates/search.html',
-					controller:'searchController'
+					controller:'searchCtrl'
 				}
 			}
 		})

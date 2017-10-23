@@ -1,5 +1,5 @@
-angular.module('starter.searchController', [])
-	.controller('searchController', function($scope, searchService, $filter) {
+angular.module('starter.searchCtrl', [])
+	.controller('searchCtrl', function($scope, searchService, $filter) {
 
 		$scope.$on('$ionicView.beforeEnter', function() {
 			/**
