@@ -1,9 +1,10 @@
 angular.module('baseService',[])
-.factory('httpService',function($q){
+.factory('httpService',function($q,$http){
 	return {
 		httpPost: function(url,param){
 			var req = {
 				method: 'POST',
+				url: url,	
 				headers: {'Content-Type': 'application/x-www-form-urlencoded'},
 				data: param,
 				timeout: 60000

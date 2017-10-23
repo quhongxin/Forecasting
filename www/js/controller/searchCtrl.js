@@ -1,5 +1,5 @@
 angular.module('starter.searchCtrl', [])
-	.controller('searchCtrl', function($scope, searchService, $filter) {
+	.controller('searchCtrl', function($scope, searchService, $filter,httpService) {
 
 		$scope.$on('$ionicView.beforeEnter', function() {
 			/**
@@ -58,16 +58,25 @@ angular.module('starter.searchCtrl', [])
 
 					});
 					var params = {
+						identifier: angular.toJson({
 						UserID: Global.UserID,
 						User8ID: Global.User8ID,
 						Token: Global.Token,
-						LanguageCode: Global.Language,
+						LanguageCode: Global.LanguageCode,
 						ProjectName: $scope.selectType.Type === 'ProjectName' ? $scope.searchValue : '',
 						FieldWBSNo: $scope.selectType.Type === 'FieldWBSNo' ? $scope.searchValue : '',
 						ViewID: $scope.selectType.Type === 'ViewID' ? $scope.searchValue : '',
 						CurrentPage: 1,
 						PageSize: 15
+						})
 					}
+					console.log(params);
+					var url = Global.Domain + "/sharp/niapp/forecasting/search";
+					httpService.httpPost(url,params).then(function(res){
+						console.log(res);
+					},function(error){
+						
+					});
 				} else {
 					searchService.getSearchList().then(function(data) {
 						$scope.searchList = data.result;
