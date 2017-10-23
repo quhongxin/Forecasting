@@ -19,6 +19,15 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.router','star
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
+      var isIPad = ionic.Platform.isIPad();
+		  var isIOS = ionic.Platform.isIOS();
+		  var isAndroid = ionic.Platform.isAndroid();
+		  var isWindowsPhone = ionic.Platform.isWindowsPhone();
+    if(isAndroid || isIPad || isIOS || isWindowsPhone){
+    	isBrowser = false;
+    }else{
+    	isBrowser = true;
+    }
   });
 });
 
