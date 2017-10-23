@@ -51,7 +51,7 @@ angular.module('starter.router', []).config(function($stateProvider, $urlRouterP
 			views: {
 				'menuContent': {
 					templateUrl: 'templates/forecasting.html',
-					controller: 'forecastingController'
+					controller: 'forecastingCtrl'
 				}
 			}
 		});
