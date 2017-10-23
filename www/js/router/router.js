@@ -17,11 +17,11 @@ angular.module('starter.router', []).config(function($stateProvider, $urlRouterP
 			}
 		})
 
-		.state('app.browse', {
-			url: '/browse',
+		.state('app.project', {
+			url: '/project',
 			views: {
 				'menuContent': {
-					templateUrl: 'templates/browse.html'
+					templateUrl: 'templates/project.html'
 				}
 			}
 		})
