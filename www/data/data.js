@@ -2,6 +2,7 @@ function getSearchList() {
 	var obj = {
 		"result": [{
 				"ProjectID": "1",
+				"ViewID": "1",
 				"FieldWBSNo": "FSSO-03399",
 				"ProjectName": "上海港国际客运中心",
 				"ProjectAddress": "上海虹口太平路1号",
@@ -10,6 +11,7 @@ function getSearchList() {
 			},
 			{
 				"ProjectID": "2",
+				"ViewID": "2",
 				"FieldWBSNo": "FSSO-04561",
 				"ProjectName": "上海宝静置业有限公司",
 				"ProjectAddress": "虹口区昊宝路8号3号楼",
@@ -18,6 +20,7 @@ function getSearchList() {
 			},
 			{
 				"ProjectID": "3",
+				"ViewID": "3",
 				"FieldWBSNo": "FSSO-03464",
 				"ProjectName": "安亭新镇一期",
 				"ProjectAddress": "嘉定安亭镇",
@@ -26,6 +29,7 @@ function getSearchList() {
 			},
 			{
 				"ProjectID": "4",
+				"ViewID": "4",
 				"FieldWBSNo": "FSSO-04571",
 				"ProjectName": "上海市精神卫生中心",
 				"ProjectAddress": "上海市卢家兵号路1060号1号楼四楼",
@@ -34,6 +38,7 @@ function getSearchList() {
 			},
 			{
 				"ProjectID": "5",
+				"ViewID": "5",
 				"FieldWBSNo": "FSSO-04572",
 				"ProjectName": "上海市精神卫生中心",
 				"ProjectAddress": "上海市卢家兵号路1060号1号楼四楼",
@@ -42,6 +47,7 @@ function getSearchList() {
 			},
 			{
 				"ProjectID": "6",
+				"ViewID": "6",
 				"FieldWBSNo": "FSSO-04573",
 				"ProjectName": "上海市精神卫生中心",
 				"ProjectAddress": "上海市卢家兵号路1060号1号楼四楼",
@@ -51,6 +57,7 @@ function getSearchList() {
 
 			{
 				"ProjectID": "7",
+				"ViewID": "7",
 				"FieldWBSNo": "FSSO-03398",
 				"ProjectName": "上海港国际客运中心",
 				"ProjectAddress": "上海虹口太平路1号",
@@ -59,6 +66,7 @@ function getSearchList() {
 			},
 			{
 				"ProjectID": "8",
+				"ViewID": "8",
 				"FieldWBSNo": "FSSO-04562",
 				"ProjectName": "上海宝静置业有限公司",
 				"ProjectAddress": "虹口区昊宝路8号3号楼",
@@ -67,6 +75,7 @@ function getSearchList() {
 			},
 			{
 				"ProjectID": "9",
+				"ViewID": "9",
 				"FieldWBSNo": "FSSO-03460",
 				"ProjectName": "安亭新镇一期",
 				"ProjectAddress": "嘉定安亭镇",
@@ -75,6 +84,7 @@ function getSearchList() {
 			},
 			{
 				"ProjectID": "10",
+				"ViewID": "10",
 				"FieldWBSNo": "FSSO-04579",
 				"ProjectName": "上海市精神卫生中心",
 				"ProjectAddress": "上海市卢家兵号路1060号1号楼四楼",

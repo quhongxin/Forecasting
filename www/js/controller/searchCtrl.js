@@ -50,13 +50,24 @@ angular.module('starter.searchCtrl', [])
 					} else if($scope.selectType.Type === "FieldWBSNo") {
 						expression.FieldWBSNo = $scope.searchValue;
 					} else {
-						expression.ProjectID = $scope.searchValue;
+						expression.ViewID = $scope.searchValue;
 					}
 					searchService.getSearchList().then(function(data) {
 						$scope.searchList = $filter('filter')(data.result, expression);
 					}, function(error) {
 
 					});
+					var params = {
+						UserID: Global.UserID,
+						User8ID: Global.User8ID,
+						Token: Global.Token,
+						LanguageCode: Global.Language,
+						ProjectName: $scope.selectType.Type === 'ProjectName' ? $scope.searchValue : '',
+						FieldWBSNo: $scope.selectType.Type === 'FieldWBSNo' ? $scope.searchValue : '',
+						ViewID: $scope.selectType.Type === 'ViewID' ? $scope.searchValue : '',
+						CurrentPage: 1,
+						PageSize: 15
+					}
 				} else {
 					searchService.getSearchList().then(function(data) {
 						$scope.searchList = data.result;

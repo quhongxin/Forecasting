@@ -51,7 +51,7 @@ angular.module('starter.projectCtrl',[])
 					} else if($scope.selectType.Type === "FieldWBSNo") {
 						expression.FieldWBSNo = $scope.searchValue;
 					} else {
-						expression.ProjectID = $scope.searchValue;
+						expression.ViewID = $scope.searchValue;
 					}
 					searchService.getSearchList().then(function(data) {
 						$scope.searchList = $filter('filter')(data.result, expression);
