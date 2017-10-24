@@ -241,11 +241,9 @@ ion-item.itemContent{
 .col-25.version{
 	color: #A09FA0;
 	text-align: center;
-	font-weight: 100;
-	word-wrap:break-word;
 }
 
-.col-25.version p{
+.col-25.version span{
 	display: inline-block;
 	line-height: 20px;
 }
