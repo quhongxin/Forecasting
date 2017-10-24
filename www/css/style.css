@@ -217,3 +217,36 @@ ion-item.itemContent{
   -ms-flex: 0 0 30%;
   flex: 0 0 30%;
   max-width: 30%; }
+  
+.col-15.description{
+	text-align: center;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+}
+.col-10.wbsno{
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.col-25 input{
+	border: 1px solid #E4E4E4;
+	display: inline-block;
+	height: 30px;
+	width: 100%;
+}
+
+.col-25.version{
+	color: #A09FA0;
+	text-align: center;
+	font-weight: 100;
+	word-wrap:break-word;
+}
+
+.col-25.version p{
+	display: inline-block;
+	line-height: 20px;
+}
+
