@@ -7,6 +7,21 @@
 angular.module('starter', ['ionic', 'starter.controllers','starter.router','starter.searchCtrl','starter.searchService','starter.forecastingCtrl','starter.projectCtrl','baseService','pascalprecht.translate'])
 
 .config(function($stateProvider,$translateProvider){
+		$translateProvider.useStaticFilesLoader({
+
+			Prefix:'/languages/',
+			
+			Suffix:'.json'
+		
+		});
+		$translateProvider.registerAvailableLanguageKeys(['en','zh'],{
+			'en-*': 'en',
+			'zh-*': 'zh'
+		});
+		$translateProvider.determinePreferredLanguage();
+})
+
+.config(function($stateProvider,$translateProvider){
 		var translationEN={
 
 			Language_en: 'english',
