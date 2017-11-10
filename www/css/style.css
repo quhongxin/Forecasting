@@ -172,7 +172,7 @@ ion-item.itemContent{
     font-size: 13px;
 }
 .bar.bar-assertive.versionConflict{
-	border-color: #ffffff;
+	border: none;
 	background-color: #F7E0C8;
 	margin-top:50px;
 }
