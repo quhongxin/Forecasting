@@ -247,4 +247,25 @@ ion-item.itemContent{
 	display: inline-block;
 	line-height: 20px;
 }
+td, th {
+    vertical-align: middle;
+}
+
+.forecasting.table{
+	width:100%;
+	border-collapse: collapse;
+}
+
+.forecasting.table td{
+	height: 40px;
+	font-size: 12px;
+	color:#666666;
+}
+
+.forecasting.table tr:first-child td{
+	height: 40px;
+	background-color: #E9F5FF;
+	color: #589AC7;
+	font-size: 12px;
+}
 
