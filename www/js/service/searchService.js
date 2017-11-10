@@ -6,6 +6,12 @@ angular.module('starter.searchService',[])
 			var searchList = getSearchList();
 			referred.resolve(searchList);
 			return referred.promise;
+		},
+		getProjectInfo: function(){
+			var referred = $q.defer();
+			var projectInfo = getDownloadProjectInfo();
+			referred.resolve(projectInfo);
+			return referred.promise;
 		}
 	}
 	

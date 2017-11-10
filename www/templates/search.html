@@ -13,7 +13,7 @@
 	</ion-nav-title>
 
 	<ion-content class="searchContent">
-		<div class="searchCard" ng-repeat="item in searchList" ui-sref="app.forecasting({projectID:item.ProjectID})">
+		<div class="searchCard" ng-repeat="item in searchList" ui-sref="app.forecasting({projectID:item.ProjectID})" ng-click="downloadProject(item.ProjectID)">
 			<div class="hbox firstRow">
 				<div class="companyIcon"></div>
 				<div class="companyName">

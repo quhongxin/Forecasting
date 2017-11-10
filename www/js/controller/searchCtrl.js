@@ -86,6 +86,15 @@ angular.module('starter.searchCtrl', [])
 				}
 
 			}
+		},
+		
+		/**
+		 * 下载项目
+		 */
+		$scope.downloadProject = function(projectID){
+			searchService.getProjectInfo().then(function(data){
+				console.log(data);
+			})
 		}
 
 	})
