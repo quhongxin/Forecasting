@@ -254,6 +254,11 @@ td, th {
 .forecasting.table{
 	width:100%;
 	border-collapse: collapse;
+	background-color: #fff;
+}
+
+.forecasting.table tr{
+	border: 1px solid #ddd;
 }
 
 .forecasting.table td{
