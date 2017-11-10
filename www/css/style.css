@@ -274,3 +274,6 @@ td, th {
 	font-size: 12px;
 }
 
+.activity{
+	border-right: 1px solid #ddd;
+}
