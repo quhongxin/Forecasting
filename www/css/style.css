@@ -277,3 +277,15 @@ td, th {
 .activity{
 	border-right: 1px solid #ddd;
 }
+
+ion-content.leftMenu{
+	background: #2B7DB5;
+}
+.leftMenu ion-item.item {
+    background: #2B7DB5;
+    border-color: #ddd;
+    color: #FFFFFF;
+}
+.leftMenu .item-complex .item-content, .item-radio .item-content {
+    background-color: #2B7DB5;
+}

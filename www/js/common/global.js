@@ -5,3 +5,21 @@ var Global = {
 	User8ID: '80000060',
 	LanguageCode: 'en',
 }
+
+function getLeftMenuList(){
+	var arr = [
+		{
+			title: "Project",
+			href: "#/app/project",
+		},
+		{
+			title: "Search",
+			href: "#/app/search",
+		},
+		{
+			title: 'Playlists',
+			href: '#/app/playlists'
+		}
+	];
+	return arr;
+}

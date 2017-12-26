@@ -16,19 +16,10 @@
     <ion-header-bar class="bar-stable">
       <h1 class="title">Left</h1>
     </ion-header-bar>
-    <ion-content>
+    <ion-content class="leftMenu">
       <ion-list>
-        <ion-item menu-close ng-click="login()">
-          Login
-        </ion-item>
-        <ion-item menu-close href="#/app/project">
-          Project
-        </ion-item>
-        <ion-item menu-close href="#/app/search">
-          Search
-        </ion-item>
-        <ion-item menu-close href="#/app/playlists">
-          Playlists
+        <ion-item ng-repeat="item in leftMenuList" href={{item.href}} ng-click="leftMenuFn($index)">
+          {{item.title}}
         </ion-item>
       </ion-list>
     </ion-content>

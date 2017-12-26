@@ -39,6 +39,12 @@ angular.module('starter.controllers', [])
       $scope.closeLogin();
     }, 1000);
   };
+  
+  $scope.leftMenuList = getLeftMenuList();
+  
+  $scope.leftMenuFn = function(index){
+  	console.log(index);
+  }
 })
 
 .controller('PlaylistsCtrl', function($scope, $translate) {
@@ -48,4 +54,5 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
+	
 });
